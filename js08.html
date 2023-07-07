@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var t = "<table border=3 width=400 height=400>";
+        var i,j,num=1; 
+        for(i=0;i<5;i++){
+             t+="<tr bgcolor=skyblue align=right>";
+                for(j=0;j<5;j++){
+                    t+="<td>" + num++ +"</td>"
+                }
+                t+="</tr>"
+             }
+             t+="</table>"
+             document.write(t)
+    </script>
+</body>
+</html>
