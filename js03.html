@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var userName = prompt("이름을 입력하세요","");//"표시할내용","초기값"
+        var Age = prompt("나이를 입력하세요","0");
+        document.write("이름은 : "+userName,"<br>")
+        document.write("나이는 : "+Age,"<br>")
+        document.write("10년후 나이는 : "+ (10 + Number(Age)),"<br>")
+        if(Age<=35){
+            document.write("당신은 MZ입니다.")
+        }
+        else{
+            document.write("당신은 MZ가 아닙니다.")
+        }
+    </script>
+</body>
+</html>
