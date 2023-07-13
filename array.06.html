@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ar =[50,60,70,80,10,100,20,30,90];
+        document.write("정렬전 : ");
+        for(i in ar){
+            document.write(ar[i],"&nbsp&nbsp&nbsp");
+        }
+        document.write("<br><br>");
+        ar.sort();
+        document.write("sort 후 : ");
+        for(i in ar){
+            document.write(ar[i],"&nbsp&nbsp&nbsp");
+        }
+        document.write("<br><br>");
+        ar.reverse();
+        document.write("reverse 후 : ");
+        for(i in ar){
+            document.write(ar[i],"&nbsp&nbsp&nbsp");
+        }
+        document.write("<br><br>");
+
+        for(i=0;i<10;i++){
+            for(j=0;j<9;j++){
+                if(ar[j] > ar[j+1]){
+                    temp = ar[j];
+                    ar[j] = ar[j+1];
+                    ar[j+1] = temp;
+                }
+            }
+        }
+        document.write("오름차순 정렬후 : ");
+        for(i in ar){
+            document.write(ar[i],"&nbsp&nbsp&nbsp");
+        }
+        document.write("<br><br>");
+
+    </script>
+</body>
+</html>

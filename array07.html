@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ar=['a','b','c'];
+        ar[3] = 'd';
+        console.log(ar);
+        ar[0] = 'f'
+        console.log(ar);
+        ar.push('zz'); // 마지막 인덱스에 밀어 넣는다
+        console.log(ar);
+        var arr_1 =["김치찌개","부대찌개","순대국밥"];
+        var arr_2 =["햄버거","피자","파스타"];
+
+        console.log(arr_1);
+        data1 = arr_1.pop();
+        document.write("arr_1 pop : ",data1,"<br><br>");
+        data2 = arr_2.shift();
+        document.write("arr_2 shift : ",data2,"<br><br>");
+
+        console.log(arr_1);
+        var cnt = arr_1.length;
+        document.write("arr_1 length : ",cnt+"개");
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ar = new Array();
+        for(var i=0;i<25;i++){
+        var com = Math.floor(Math.random()*25)+1;
+        ar[i] = com;
+        for(var j=0;j<i;j++){
+            if(ar[i] == ar[j]){
+                i--;
+                break;
+            }
+        }
+    }
+    for(var i=0;i<25;i++){
+        document.write(ar[i] + "&nbsp");
+    }
+    document.write("<br>");
+    for(var x in ar){
+        document.write(x + "&nbsp");
+    }
+    document.write("<br>");
+    for(var x in ar){
+        document.write(ar[x] + "&nbsp");
+        if((Number(x)+1)%5==0){
+            document.write("<br>");
+        }
+    }
+    </script>
+</body>
+</html>

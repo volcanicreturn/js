@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var text = "Hello Thank you good luck to you";
+        document.write(text,"<br><br>");
+        document.write("charAt(문자 불러오기) : "+text.charAt(6),"<br><br>");
+        document.write("slice(문자 잘라내기) : "+text.slice(6,11),"<br><br>"); //slice(어디부터,어디까지)
+        document.write("indexOf(글자 위치 반환) : "+text.indexOf("you"),"<br><br>"); // indexOF == search 
+        document.write("indexOf(글자 위치 반환,시작 위치) : "+text.indexOf("you",13),"<br><br>");
+        document.write("indexOf(글자 위치 반환) : "+text.indexOf("x"),"<br><br>"); //찾고자 하는 글자가 없을때
+        document.write(text.slice(text.indexOf("g"),text.indexOf("d")+1),"<br><br>");
+        document.write("match(찾아서 출력) : "+text.match("you"),"<br><br>"); // 찾고자 하는게 있을때
+        document.write("match(찾아서 출력) : "+text.match("yu"),"<br><br>"); // 찾고자 하는게 없을때
+
+        document.write("substr(글자 반환 개수 기준) : "+text.substr(16,3),"<br><br>"); // 기준 0부터 개수
+        document.write("substring(글자 반환 위치 기준) : "+text.substring(3,10),"<br><br>"); // 시작위치, 끝위치
+
+        document.write("replace(치환) : "+text.replace("you","me"),"<br><br>");
+        
+        document.write("toLowerCase(소문자 변환) :" + text.toLowerCase(),"<br><br>");
+        document.write("toUpperCase(대문자 변환) :" + text.toUpperCase(),"<br><br>");
+        
+        var str = text.split(" ");
+        document.write("split후 [0] : "+str[0],"<br><br>");
+        document.write("split후 [1] : "+str[1],"<br><br>");
+        document.write("split후 [4] : "+str[4],"<br><br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr_1=["수원","병점","의왕","군포"];
+        var arr_2=["세류","세마"];
+        var arr_3=[4,5,6,1,2,3,7,8,9,10,100,1000];
+        var arr_4=["abc","가나다","+__+",123];
+        var result;
+        result = arr_1.join("--"); //배열값 사이 연결 문자
+        document.write("join -- 연결 : " + result);
+        document.write("<br><br>");
+        var re = result.slice(1,5) // 잘라내기(시작위치 ~ <개수)
+        document.write(re);
+        document.write("<br><br>");
+        document.write("문자 오름차순 sort : " + up);
+        document.write("<br><br>");
+        result = arr_1.concat(arr_2); //배열 합치기
+        document.write("Concat 배열 합치기 : " + result);
+        document.write("<br><br>");
+        var up = result.sort(); //문자 오름차순 정렬
+        document.write("문자 오름차순 sort : " + up);
+        document.write("<br><br>");
+        up.reverse();
+        document.write("문자 내림차순 sort : " + up);
+        document.write("<br><br>");
+        document.write("arr_4 정렬 : " + arr_4.sort()); //숫자, 특문, 한글, 영어 정렬
+        document.write("<br><br>");
+        up = arr_3.sort(); //숫자 오름차순 정렬
+        document.write("숫자 오름차순 sort :" + up);
+        document.write("<br><br>");
+        var down = arr_3.sort((a,b)=>b-a); //숫자 내림차수 정렬
+        document.write("숫자 내림차순 sort : " + down);
+        document.write("<br><br>");
+    </script>
+</body>
+</html>

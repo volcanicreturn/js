@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 1;
+        a+=2;
+        document.write(a,"<br>");
+        var b = 'abc';
+        b+='def';
+        document.write(b,"<br>");
+        var c = new Array();
+        c = ["zzz","aaa"];
+        c+= 'xxx';
+        console.log(c,"<br>");
+        var d = new Array();
+        d = [7,8,9];
+        document.write(d,"<br>")
+        document.write(d[1],"<br>")
+        d+=10;
+        document.write(d,"<br>")
+        d[0]+=10;
+        document.write(d[0],"<br>")
+        d[0] = d[0] + 10;
+        document.write(d,"<br>")
+        d[0] = d[0] + Number(10);
+        document.write(d,"<br>")
+        d[0] = Number(d[0]+10)
+        document.write(d,"<br>")
+    </script>
+</body>
+</html>
